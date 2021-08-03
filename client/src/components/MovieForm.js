@@ -49,6 +49,15 @@ function MovieForm() {
   return (
     
     <Wrapper>
+      {
+  errors.length > 0 && (
+    <ul style={{ color: "red" }}>
+      {errors.map((error) => (
+        <li key={error}>{error}</li>
+      ))}
+    </ul>
+  );
+}
       <form onSubmit={handleSubmit}>
         <FormGroup>
           <label htmlFor="title">Title</label>
