@@ -1,3 +1,5 @@
+puts "Seeding movie data...💩"
+
 Movie.create([
   {
     title: "The Color Purple",
@@ -143,3 +145,5 @@ Movie.create([
     female_director: true
   }
 ])
+
+puts "Seeding complete! 👍"
